@@ -1,11 +1,88 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Survey Time!</title>
 </head>
+
 <body>
-    
+    <div class="container justify-content-center">
+        <div class="row">
+            <div>
+                <h1>
+                    Survey Questions
+                </h1>
+            </div>
+        </div>
+        <hr>
+
+        <h2>
+            About You
+        </h2>
+
+        <h3>
+            Name (Required)
+        </h3>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="">
+                </div>
+            </div>
+        </form>
+
+        <h3>
+            Link to Photo Image (Required)
+        </h3>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="">
+                </div>
+            </div>
+        </form>
+
+        <form>
+            <div class="form-row align-items-center">
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Select an answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neutral)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <br>
+                
+                <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-sm-7">
+            <a href="/api/friends">API Friends List</a> |
+            <a href="https://github.com/seanmrudd/friend-finder">GitHub Repo</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
