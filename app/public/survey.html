@@ -10,6 +10,47 @@
 </head>
 
 <body>
+
+    <div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Error</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Please fill out the required fields and answer all of the questions.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="friend-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Meat your new friend!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Harry Richardson.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container justify-content-center">
         <div class="row">
             <div>
@@ -18,7 +59,7 @@
                 </h1>
             </div>
         </div>
-        <hr>
+        <hr><br>
 
         <h2>
             About You
@@ -30,7 +71,7 @@
         <form>
             <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="">
+                    <input type="text" class="form-control" id="new-friend-name" placeholder="">
                 </div>
             </div>
         </form>
@@ -41,16 +82,17 @@
         <form>
             <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="">
+                    <input type="text" class="form-control" id="new-friend-pic" placeholder="">
                 </div>
             </div>
         </form>
+        <hr><br><br>
 
         <form>
-            <div class="form-row align-items-center">
+            <div class="row">
                 <div class="col-auto my-1">
-                    <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <label class="mr-sm-2 h4" for="inlineFormCustomSelect">Fishing is life.</label>
+                    <select class="custom-select mr-sm-2" id="question1">
                         <option selected>Select an answer</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2 (Disagree)</option>
@@ -59,10 +101,131 @@
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
                 </div>
-                <br>
-                
+            </div>
+            <div class="row">
                 <div class="col-auto my-1">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <label class="mr-sm-2 h4" for="inlineFormCustomSelect">Miachel Cera is a terrible actor.</label>
+                    <select class="custom-select mr-sm-2" id="question2">
+                        <option selected>Select an answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neutral)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2 h4" for="inlineFormCustomSelect">The moon landing was made in a Hollywood
+                        basement.</label>
+                    <select class="custom-select mr-sm-2" id="question3">
+                        <option selected>Select an answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neutral)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2 h4" for="inlineFormCustomSelect">Playing phone games makes you a
+                        gamer.</label>
+                    <select class="custom-select mr-sm-2" id="question4">
+                        <option selected>Select an answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neutral)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2 h4" for="inlineFormCustomSelect">Console gaming is for peasants. PC MASTER
+                        RACE!</label>
+                    <select class="custom-select mr-sm-2" id="question5">
+                        <option selected>Select an answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neutral)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2 h4" for="inlineFormCustomSelect">I live through memes.</label>
+                    <select class="custom-select mr-sm-2" id="question6">
+                        <option selected>Select an answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neutral)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2 h4" for="inlineFormCustomSelect">5 hours of sleep is plenty.</label>
+                    <select class="custom-select mr-sm-2" id="question7">
+                        <option selected>Select an answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neutral)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2 h4" for="inlineFormCustomSelect">Bacon is a vegetable.</label>
+                    <select class="custom-select mr-sm-2" id="question8">
+                        <option selected>Select an answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neutral)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2 h4" for="inlineFormCustomSelect">I watch the Superbowl for the
+                        commercials.</label>
+                    <select class="custom-select mr-sm-2" id="question9">
+                        <option selected>Select an answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neutral)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2 h4" for="inlineFormCustomSelect">This survey was a waste of time.</label>
+                    <select class="custom-select mr-sm-2" id="question10">
+                        <option selected>Select an answer</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neutral)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
                 </div>
             </div>
         </form>
@@ -83,6 +246,56 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!-- <script src="../javascript/logic.js"></script> -->
+    <script type="text/javascript">
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            // console.log($("#new-friend-name").val().trim());
+            if ($("#new-friend-name").val().trim() !== "" && $("#new-friend-pic").val().trim() !== "") {
+                var nameInput = $("#new-friend-name").val().trim();
+                var picInput = $("#new-friend-pic").val().trim();
+                // console.log(nameInput, picInput)
+            } else errorModal();
+
+            var answerArray = [];
+
+            var q1Input = parseInt($('#question1').val());
+            // console.log(q1Input);
+            var q2Input = parseInt($('#question2').val());
+            var q3Input = parseInt($('#question3').val());
+            var q4Input = parseInt($('#question4').val());
+            var q5Input = parseInt($('#question5').val());
+            var q6Input = parseInt($('#question6').val());
+            var q7Input = parseInt($('#question7').val());
+            var q8Input = parseInt($('#question8').val());
+            var q9Input = parseInt($('#question9').val());
+            var q10Input = parseInt($('#question10').val());
+
+            answerArray.push(q1Input, q2Input, q3Input, q4Input, q5Input, q6Input, q7Input, q8Input, q9Input, q10Input);
+            // console.log(answerArray);
+
+            // To Do push nameInput, picInput and answerArray to api/friends
+
+            var newFriendData = [nameInput, picInput, answerArray];
+            // console.log(newFriendData);
+            if (answerArray.includes(NaN)) {
+                errorModal();
+            } else {
+                $.post("/api/friends", newFriendData)
+                    .then(function(data){
+                        console.log(data);
+                    });
+            };
+        });
+
+        function errorModal() {
+            $('#error-modal').modal('toggle');
+        };
+
+        function friendModal() {
+            $('#friend-modal').modal('toggle');
+        }
+    </script>
 </body>
 
 </html>
