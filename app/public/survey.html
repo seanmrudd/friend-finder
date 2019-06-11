@@ -365,8 +365,8 @@
 
                     console.log(indexOfFriend);
 
-                    $("#nameOfFriend").append(dataFriendsApi[indexOfFriend].name);
-                    $('#picOfFriend').append(dataFriendsApi[indexOfFriend].photo);
+                    $("#nameOfFriend").append(dataFriendsApi[indexOfFriend].name);                 
+                    $('#picOfFriend').append("<img src = " + dataFriendsApi[indexOfFriend].photo +">");
 
                     //Get absolute value from each friend answer and user answer
                     //Add up all the absolute values
